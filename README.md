@@ -18,8 +18,8 @@ This project is a Flask application that retrieves YouTube video transcripts and
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/yourrepository.git
-   cd yourrepository
+   git clone https://github.com/IvanAquino/Youtube-Transcription-Flask-Api.git
+   cd Youtube-Transcription-Flask-Api
    ```
 
 2. Install the required packages:
@@ -28,6 +28,8 @@ This project is a Flask application that retrieves YouTube video transcripts and
    ```
 
 ## Configuration
+
+AUTH_TOKEN is used to prevent unauthorized users from transcribing videos without your permission.
 
 1. Update the `AUTH_TOKEN` in `app.py` with your secret token:
    ```python
