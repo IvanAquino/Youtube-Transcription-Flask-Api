@@ -45,7 +45,7 @@ def transcript_text():
         return jsonify({"message": "Unable to fetch transcript."}), 404
 
     transcript_text = "\n".join([entry['text'] for entry in transcript])
-    return transcript_text
+    return jsonify({"text": transcript_text})
 
 @app.route('/transcript_json', methods=['GET'])
 @token_required
